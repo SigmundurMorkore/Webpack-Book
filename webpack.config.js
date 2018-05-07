@@ -11,7 +11,9 @@ const commonConfig = merge([
         title: "Webpack Book"
       })
     ]
-  }
+  },
+
+  parts.loadCSS()
 ])
 
 const productionConfig = merge([])
