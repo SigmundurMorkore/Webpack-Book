@@ -15,7 +15,7 @@ module.exports = {
     // unlike default "localhost".
     host: process.env.HOST, // Defaults to "localhost"
     port: process.env.PORT, // Defaults to 8080
-    open: true, // Open the page in browser
+    open: false, // Open the page in browser
     overlay: true // Overlay for capturing compilation related warnings and errors
   },
 
