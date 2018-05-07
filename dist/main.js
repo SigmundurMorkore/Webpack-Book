@@ -71,14 +71,40 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/component.js":
+/*!**************************!*\
+  !*** ./src/component.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((text = "Hello world") => {
+  const element = document.createElement("div")
+
+  element.innerHTML = text
+
+  return element
+});
+
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"Hello world\")\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ "./src/component.js");
+
+
+document.body.appendChild(Object(_component__WEBPACK_IMPORTED_MODULE_0__["default"])())
+
 
 /***/ })
 
