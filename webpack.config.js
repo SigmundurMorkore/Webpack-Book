@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
 require("dotenv").config()
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   devServer: {
@@ -15,12 +15,9 @@ module.exports = {
     // unlike default "localhost".
     host: process.env.HOST, // Defaults to "localhost"
     port: process.env.PORT, // Defaults to 8080
-    open: true // OPen the page in browser
+    open: true, // Open the page in browser
+    overlay: true // Overlay for capturing compilation related warnings and errors
   },
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "Webpack Book"
-    })
-  ]
+  plugins: [new HtmlWebpackPlugin({ title: "Webpack Book" })]
 }
