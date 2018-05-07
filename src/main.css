@@ -5,3 +5,8 @@ body {
   padding-top: 50%;
   font-family: sans-serif;
 }
+
+.pure-button {
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}

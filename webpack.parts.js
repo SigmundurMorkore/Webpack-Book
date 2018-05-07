@@ -50,8 +50,15 @@ exports.purifyCSS = ({ paths }) => ({
   plugins: [
     new PurifyCSSPlugin({
       paths,
-      minimize: true,
+      minimize: false,
       verbose: true
     })
   ]
+})
+
+exports.autoprefix = () => ({
+  loader: "postcss-loader",
+  options: {
+    plugins: () => [require("autoprefixer")()]
+  }
 })
