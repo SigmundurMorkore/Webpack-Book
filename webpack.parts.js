@@ -1,5 +1,3 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-
 exports.devServer = ({ host, port } = {}) => ({
   devServer: {
     stats: "errors-only",
@@ -24,6 +22,7 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
   }
 })
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 exports.extractCSS = ({ include, exclude, use = [] }) => {
   // Output extracted CSS to a file
   const plugin = new MiniCssExtractPlugin({
@@ -45,3 +44,14 @@ exports.extractCSS = ({ include, exclude, use = [] }) => {
     plugins: [plugin]
   }
 }
+
+const PurifyCSSPlugin = require("purifycss-webpack")
+exports.purifyCSS = ({ paths }) => ({
+  plugins: [
+    new PurifyCSSPlugin({
+      paths,
+      minimize: true,
+      verbose: true
+    })
+  ]
+})
