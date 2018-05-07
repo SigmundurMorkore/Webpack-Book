@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/SigmundurMorkore/Webpack-Book/issues"
   },
-  "homepage": "https://github.com/SigmundurMorkore/Webpack-Book#readme"
+  "homepage": "https://github.com/SigmundurMorkore/Webpack-Book#readme",
+  "devDependencies": {
+    "webpack": "^4.8.0",
+    "webpack-cli": "^2.1.3"
+  }
 }
