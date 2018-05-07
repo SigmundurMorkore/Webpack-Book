@@ -79,15 +79,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ((text = "Hello world") => {
-  const element = document.createElement("div")
-
-  element.innerHTML = text
-
-  return element
-});
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((text = \"Hello world\") => {\r\n  const element = document.createElement(\"div\")\r\n\r\n  element.innerHTML = text\r\n\r\n  return element\r\n});\r\n\n\n//# sourceURL=webpack:///./src/component.js?");
 
 /***/ }),
 
@@ -99,12 +91,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ "./src/component.js");
-
-
-document.body.appendChild(Object(_component__WEBPACK_IMPORTED_MODULE_0__["default"])())
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ \"./src/component.js\");\n\n\ndocument.body.appendChild(Object(_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"])())\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
