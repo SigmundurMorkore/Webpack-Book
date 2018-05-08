@@ -132,9 +132,6 @@ button::-moz-focus-inner {
 
 body {
   background: cornsilk;
-  background-image: url(dog.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   font-size: 5em;
   text-align: center;
   padding-top: 50%;
