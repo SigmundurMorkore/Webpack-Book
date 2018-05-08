@@ -34,7 +34,19 @@ const productionConfig = merge([
     options: {
       limit: 15000,
       name: "[name].[ext]"
-    }
+    },
+    use: [
+      {
+        loader: "image-webpack-loader",
+        options: {
+          bypassOnDebug: true
+        }
+      }
+    ]
+  }),
+
+  parts.loadSVGs({
+    use: ["svgo-loader"]
   })
 ])
 
@@ -46,8 +58,8 @@ const developmentConfig = merge([
   }),
 
   parts.loadCSS(),
-
-  parts.loadImages()
+  parts.loadImages(),
+  parts.loadSVGs()
 ])
 
 module.exports = mode => {

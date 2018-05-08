@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="63px" height="82px" viewBox="0 0 63 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Apple</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Apple" sketch:type="MSLayerGroup" transform="translate(-16.000000, -6.000000)">
+            <rect id="Container" sketch:type="MSShapeGroup" x="0.0103" y="0.912690642" width="96" height="96"></rect>
+            <g id="Shape" transform="translate(18.000000, 8.000000)" stroke-width="4" stroke="#FFFFFF" stroke-linecap="round" sketch:type="MSShapeGroup" stroke-linejoin="round">
+                <path d="M24.3435,76.5142 C25.6777,75.9392 26.948,75.1082 28.3943,74.9681 C30.6192,74.7525 32.617,76.1986 34.7224,76.9488 C46.157,81.0233 53.8398,68.7972 56.7082,55.8087 C58.7009,46.7867 62.0817,33.1957 51.965,26.662 C43.965,21.4954 29.6435,26.9602 22.3759,26.0027 C16.2978,25.2019 8.1032,21.1348 1.965,30.8286 C-3.5951,39.6095 6.6317,59.4953 8.1623,68.7733 C9.2646,75.4539 18.1252,79.1934 24.3435,76.5142 L24.3435,76.5142 Z"></path>
+                <path d="M28.6331,25.2573 C27.6319,17.3285 26.3462,11.6539 22.1319,4.9952"></path>
+                <path d="M29.8206,20.7629 C28.4556,20.8548 28.0901,10.7694 30.1487,7.4433 C32.7986,3.1618 35.4651,2.1618 39.6463,0.5908 C38.6319,5.9952 41.0276,11.6859 39.7986,14.8285 C38.5696,17.9711 33.7986,20.4952 29.8206,20.7629 L29.8206,20.7629 Z"></path>
+                <path d="M11.2986,38.3285 C10.7749,40.8268 11.2986,43.8285 12.7986,46.1619"></path>
+            </g>
+        </g>
+    </g>
+</svg>

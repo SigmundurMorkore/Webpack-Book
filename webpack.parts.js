@@ -63,17 +63,27 @@ exports.autoprefix = () => ({
   }
 })
 
-exports.loadImages = ({ include, exclude, options } = {}) => ({
+exports.loadImages = ({ include, exclude, options, use = [] } = {}) => ({
   module: {
     rules: [
       {
-        test: /\.(png|jpg)$/,
+        test: /\.(gif|png|jpe?g)$/,
         include,
         exclude,
-        use: {
-          loader: "url-loader",
-          options
-        }
+        use: [{ loader: "url-loader", options }].concat(use)
+      }
+    ]
+  }
+})
+
+exports.loadSVGs = ({ include, exclude, options, use = [] } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.svg$/,
+        include,
+        exclude,
+        use: ["file-loader"].concat(use)
       }
     ]
   }
