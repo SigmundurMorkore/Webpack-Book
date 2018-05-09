@@ -1,4 +1,5 @@
 require("dotenv").config()
+require("babel-polyfill")
 const merge = require("webpack-merge")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
