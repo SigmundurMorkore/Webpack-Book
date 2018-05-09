@@ -21,6 +21,8 @@
   "homepage": "https://github.com/SigmundurMorkore/Webpack-Book#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
     "dotenv": "^5.0.1",
     "file-loader": "^1.1.11",

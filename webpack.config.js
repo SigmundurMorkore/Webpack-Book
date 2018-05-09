@@ -28,7 +28,8 @@ const commonConfig = merge([
       })
     ]
   },
-  parts.loadFonts()
+  parts.loadFonts({ include: PATHS.app }),
+  parts.loadJavascript({ include: PATHS.app })
 ])
 
 const productionConfig = merge([
