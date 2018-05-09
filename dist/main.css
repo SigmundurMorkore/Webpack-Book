@@ -130,6 +130,13 @@ button::-moz-focus-inner {
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "myfontfamily";
+  src: url(fonts/ArcaMajora3-Bold.woff2) format("woff2"),
+    url(fonts/ArcaMajora3-Bold.woff) format("woff"),
+    url(fonts/ArcaMajora3-Bold.eot) format("embedded-opentype");
+}
+
 body {
   background: cornsilk;
   background-image: url(dog.jpg);
@@ -137,10 +144,25 @@ body {
   background-position: center;
   font-size: 5em;
   text-align: center;
-  padding-top: 50%;
+  padding-top: 25%;
   font-family: sans-serif;
 }
 
 .pure-button {
   border-radius: 1em;
+  font-family: "Raleway";
+}
+
+div:before {
+  font-icon: url(44507f2266bb0c3962fed3d2777c58ca.svg);
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+}
+
+div:hover:before {
+  color: red;
+}
+
+div:after {
+  font-icon: 50% url(44507f2266bb0c3962fed3d2777c58ca.svg);
 }

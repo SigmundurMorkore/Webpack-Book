@@ -88,3 +88,23 @@ exports.loadSVGs = ({ include, exclude, options, use = [] } = {}) => ({
     ]
   }
 })
+
+exports.loadFonts = ({ include, exclude, options, use = [] } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        include,
+        exclude,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "fonts/[name].[ext]"
+            }
+          }
+        ].concat(use)
+      }
+    ]
+  }
+})

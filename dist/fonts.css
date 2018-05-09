@@ -1,0 +1,59 @@
+/* === Raleway - regular */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/Raleway-Regular.eot");
+	src: local("Raleway"),
+		local("Raleway-Regular"),
+		url("./fonts/Raleway-Regular.eot") format("embedded-opentype"),
+		url("./fonts/Raleway-Regular.woff2") format("woff2"),
+		url("./fonts/Raleway-Regular.woff") format("woff"),
+		url("./fonts/Raleway-Regular.ttf") format("truetype"),
+		url("./fonts/Raleway-Regular.svg") format("svg");
+}
+
+/* === Roboto - regular */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/Roboto-Regular.eot");
+	src: local("Roboto"),
+		local("Roboto-Regular"),
+		url("./fonts/Roboto-Regular.eot") format("embedded-opentype"),
+		url("./fonts/Roboto-Regular.woff2") format("woff2"),
+		url("./fonts/Roboto-Regular.woff") format("woff"),
+		url("./fonts/Roboto-Regular.ttf") format("truetype"),
+		url("./fonts/Roboto-Regular.svg") format("svg");
+}
+
+/* === Roboto - 700italic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 700;
+	src: url("./fonts/Roboto-BoldItalic.eot");
+	src: local("Roboto Bold Italic"),
+		local("Roboto-BoldItalic"),
+		url("./fonts/Roboto-BoldItalic.eot") format("embedded-opentype"),
+		url("./fonts/Roboto-BoldItalic.woff2") format("woff2"),
+		url("./fonts/Roboto-BoldItalic.woff") format("woff"),
+		url("./fonts/Roboto-BoldItalic.ttf") format("truetype"),
+		url("./fonts/Roboto-BoldItalic.svg") format("svg");
+}
+
+/* === Source Sans Pro - regular */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/SourceSansPro-Regular.eot");
+	src: local("Source Sans Pro Regular"),
+		local("SourceSansPro-Regular"),
+		url("./fonts/SourceSansPro-Regular.eot") format("embedded-opentype"),
+		url("./fonts/SourceSansPro-Regular.woff2") format("woff2"),
+		url("./fonts/SourceSansPro-Regular.woff") format("woff"),
+		url("./fonts/SourceSansPro-Regular.ttf") format("truetype"),
+		url("./fonts/SourceSansPro-Regular.svg") format("svg");
+}

@@ -1,6 +1,7 @@
 require("dotenv").config()
 const merge = require("webpack-merge")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 const path = require("path")
 const glob = require("glob")
@@ -16,9 +17,18 @@ const commonConfig = merge([
     plugins: [
       new HtmlWebpackPlugin({
         title: "Webpack Book"
+      }),
+      new GoogleFontsPlugin({
+        fonts: [
+          { family: "Source Sans Pro" },
+          { family: "Roboto", variants: ["400", "700italic"] },
+          { family: "Raleway" }
+        ],
+        path: "fonts/"
       })
     ]
-  }
+  },
+  parts.loadFonts()
 ])
 
 const productionConfig = merge([
