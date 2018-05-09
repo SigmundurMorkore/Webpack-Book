@@ -13,6 +13,8 @@ const PATHS = {
   app: path.join(__dirname, "src")
 }
 
+//----------------------------------------------------------------------------//
+
 const commonConfig = merge([
   {
     plugins: [
@@ -30,8 +32,11 @@ const commonConfig = merge([
     ]
   },
   parts.loadFonts({ include: PATHS.app }),
-  parts.loadJavascript({ include: PATHS.app })
+  parts.loadJavascript({ include: PATHS.app }),
+  parts.loadJSON5()
 ])
+
+//----------------------------------------------------------------------------//
 
 const productionConfig = merge([
   parts.extractCSS({
@@ -62,6 +67,8 @@ const productionConfig = merge([
   })
 ])
 
+//----------------------------------------------------------------------------//
+
 const developmentConfig = merge([
   parts.devServer({
     // Customize host/port here if needed
@@ -73,6 +80,8 @@ const developmentConfig = merge([
   parts.loadImages(),
   parts.loadSVGs()
 ])
+
+//----------------------------------------------------------------------------//
 
 module.exports = mode => {
   if (mode === "production") {

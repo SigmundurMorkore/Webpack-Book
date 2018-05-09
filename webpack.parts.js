@@ -121,3 +121,16 @@ exports.loadJavascript = ({ include, exclude } = {}) => ({
     ]
   }
 })
+
+exports.loadJSON5 = ({ include, exclude } = {}) => ({
+  module: {
+    rules: [
+      {
+        test: /\.json5$/,
+        include,
+        exclude,
+        use: "json5-loader"
+      }
+    ]
+  }
+})

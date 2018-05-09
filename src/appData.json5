@@ -1,0 +1,5 @@
+// appData.json5
+{
+  env: "production",
+  passwordStrength: "strong"
+}
